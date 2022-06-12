@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App Finder</string>
+
+    <string name="tab_package_user">USER APPS</string>
+    <string name="tab_package_system">SYSTEM APPS</string>
+    <string name="todo">TODO</string>
+    <string name="copy_details">Copy Details</string>
+    <string name="share_details">Share Details</string>
+    <string name="share_app">Share App</string>
+    <string name="open_in_device">Open in Device</string>
+    <string name="open_in_playstore">Open in PlayStore</string>
+    <string name="app_information">App Information</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="package_data"
+            type="com.orbitalsonic.appfinderpackage.PackageItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="?selectableItemBackground"
+        >
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvTitleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="?colorOnPrimary"
+            android:textStyle="bold"
+            android:text="@={package_data.titleName}"
+            android:gravity="start"
+            android:paddingHorizontal="7dp"
+            android:paddingBottom="7dp"
+            android:layout_marginHorizontal="7dp"
+            app:layout_constraintStart_toEndOf="@+id/ivAppIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivAppIcon"
+            app:layout_constraintBottom_toTopOf="@+id/tvPackageName"
+            />
+
+        <TextView
+            android:id="@+id/tvPackageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="?colorOnPrimary"
+            android:text="@={package_data.packageName}"
+            android:gravity="start"
+            android:paddingHorizontal="7dp"
+            android:layout_marginHorizontal="7dp"
+            app:layout_constraintStart_toEndOf="@+id/ivAppIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleName"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAppIcon"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/app_information"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/btnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_information"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_app_info"
+            android:drawablePadding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/btnOpenPlayStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_in_playstore"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_open_in_playstore"
+            android:drawablePadding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/btnOpenApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_in_device"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_open_in_device"
+            android:drawablePadding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/btnShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_app"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_share_app"
+            android:drawablePadding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/btnShareAppDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_details"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_share_details"
+            android:drawablePadding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/btnCopyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_details"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="?selectableItemBackground"
+            app:drawableStartCompat="@drawable/ic_copy_details"
+            android:drawablePadding="20dp"
+            />
+
+
+
+    </LinearLayout>
+</layout>
